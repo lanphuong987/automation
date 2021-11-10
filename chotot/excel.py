@@ -1,8 +1,6 @@
 from openpyxl import Workbook
-
-from openclassroom.database import connect
-from get_data_from_mysql import *
-from database import *
+from chotot.get_data_from_mysql import *
+from chotot.database import *
 def new_wb():
     conn = connect()
     cursor = conn.cursor()

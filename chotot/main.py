@@ -3,7 +3,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.action_chains import ActionChains
-from excel import *
+from chotot.excel import *
 import time
 contact = []
 conn = connect()
@@ -12,7 +12,7 @@ cursor = conn.cursor()
 
 
 def get_all_contact():
-    page_number = 6
+    page_number = 1
     driver.get("https://xe.chotot.com/mua-ban-oto-moi-binh-duong-sdca2?page=" + str(page_number))
     while True:
         time.sleep(3)
@@ -98,6 +98,3 @@ def set_location(city_name, dictrict_name):
             if distric in c.text:
                 ActionChains(driver).move_to_element(c).click(c).perform()
                 time.sleep(3)
-
-connect()
-get_all_contact()
