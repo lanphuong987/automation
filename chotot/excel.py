@@ -1,9 +1,6 @@
-from hmac import new
-
-import self
 from openpyxl import Workbook
 
-from data_scraping.open_classroom.database import connect
+from openclassroom.database import connect
 from get_data_from_mysql import *
 from database import *
 def new_wb():

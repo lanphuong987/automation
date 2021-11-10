@@ -1,7 +1,7 @@
 import time
-from database import connect
+from openclassroom.database import connect
 from setup_driver import driver
-from data_scraping.open_classroom.action import login, get_all_course, get_cour_by_link
+from openclassroom.action import login, get_cour_by_link
 
 conn = connect()
 driver = driver()

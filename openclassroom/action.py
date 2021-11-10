@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.action_chains import ActionChains
 from database_insert import insert_chapter, insert_course, insert_lesson
-from data_scraping.open_classroom.get_data_form_mysql import *
+from openclassroom.get_data_form_mysql import *
 import time
 
 

@@ -1,7 +1,7 @@
 import self as self
 from mysql.connector import MySQLConnection
 import mysql.connector
-from data_scraping.open_classroom.Courses import Courses, Lesson, Chapter
+from openclassroom.Courses import Courses, Lesson, Chapter
 
 
 def make_cursor():

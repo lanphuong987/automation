@@ -1,4 +1,4 @@
-from data_scraping.open_classroom.database import connect
+from openclassroom.database import connect
 def insert_course(c):
     query = "INSERT INTO course(course_name, system_id, description, course_url, picture_url, intro) " \
             "VALUES(%s, %s, %s, %s, %s, %s)"
